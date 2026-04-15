@@ -7,6 +7,12 @@ All notable changes to Cockpit Tools will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
+## [0.21.4] - 2026-04-15
+
+### Fixed
+- **Release workflow now publishes Windows installer assets more reliably in forked repositories**: when Tauri signing secrets are not configured, updater artifact generation and related post-processing jobs are skipped safely instead of failing the entire pipeline, Linux ARM updater entries are treated as optional, and release publishing no longer depends on optional updater metadata jobs, so `.exe` assets can still be released.
+
+---
 ## [0.21.3] - 2026-04-13
 
 ### Added

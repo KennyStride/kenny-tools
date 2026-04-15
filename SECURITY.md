@@ -2,20 +2,35 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Kenny-Tools 目前只对最新稳定分支提供安全修复。
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported |
+| ------- | --------- |
+| 0.21.x  | :white_check_mark: |
+| 0.20.x  | :white_check_mark: |
+| < 0.20  | :x: |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+如果你发现了安全漏洞，请不要先公开披露。
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+- 优先方式：在 GitHub 仓库创建 **Private Security Advisory**
+- 备选方式：发送邮件到 `security@kennygmail.com`
+
+请尽量附带以下信息：
+
+- 影响版本与系统环境
+- 复现步骤（PoC）
+- 可能影响范围（数据泄露、权限提升、远程执行等）
+- 你建议的缓解方式（如有）
+
+## Response SLA
+
+- 72 小时内确认收到报告
+- 7 天内给出初步评估与修复计划
+- 高危问题会优先发布临时缓解方案或热修版本
+
+## Disclosure Policy
+
+- 漏洞修复前，请避免公开细节
+- 修复发布后，我们会在 Release Notes 中致谢（可匿名）

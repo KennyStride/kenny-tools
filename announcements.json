@@ -3,10 +3,10 @@
   "topRightAd": {
     "id": "top-right-ad-2026-04-shop",
     "priority": 100,
-    "text": "此地址提供Gemini Pro成品号与Codex Plus兑换码，有需要可以支持一下，感谢。",
+    "text": "提供Gemini认证、成品号、gmail邮箱等。",
     "badge": "推广",
-    "ctaLabel": "选购",
-    "ctaUrl": "https://xiangzili.xyz",
+    "ctaLabel": "立即前往",
+    "ctaUrl": "https://car.kennygmail.com/",
     "targetVersions": "*",
     "targetLanguages": [
       "*"
@@ -15,9 +15,9 @@
     "expiresAt": null,
     "locales": {
       "zh-CN": {
-        "text": "此地址提供Gemini Pro成品号与Codex Plus兑换码，有需要可以支持一下，感谢。",
+        "text": "提供Gemini认证、成品号、gmail邮箱等。",
         "badge": "推广",
-        "ctaLabel": "选购"
+        "ctaLabel": "立即前往"
       }
     }
   },
@@ -26,13 +26,13 @@
       "id": "ann-2026-04-author-shop-support",
       "type": "info",
       "priority": 999,
-      "title": "🛒 作者自营账号与兑换码渠道上线",
-      "summary": "提供 Gemini Pro 成品号与 Codex Plus 兑换码，购买账号赠送 Antigravity 无感切号方案。",
-      "content": "感谢大家一直以来对项目的支持！\n\n我这边开通了自营购买地址，提供：\n• Gemini Pro 成品号\n• Codex Plus 兑换码\n• 购买账号赠送 Antigravity 无感切号方案\n\n如果你刚好有这方面需求，欢迎前往选购支持。",
+      "title": "📣 Kenny 资源服务入口",
+      "summary": "提供Gemini认证、成品号、gmail邮箱等。",
+      "content": "为了方便大家快速使用，这里整理了统一入口，当前可提供：\n• Gemini认证\n• 成品号\n• gmail邮箱\n\n如有需要，可直接进入查看。",
       "action": {
         "type": "url",
-        "target": "https://xiangzili.xyz",
-        "label": "前往选购"
+        "target": "https://car.kennygmail.com/",
+        "label": "立即前往"
       },
       "targetVersions": "*",
       "targetLanguages": [
@@ -44,22 +44,22 @@
       "expiresAt": null,
       "locales": {
         "zh-CN": {
-          "title": "🛒 作者自营账号与兑换码渠道上线",
-          "summary": "提供 Gemini Pro 成品号与 Codex Plus 兑换码，购买账号赠送 Antigravity 无感切号方案。",
-          "content": "感谢大家一直以来对项目的支持！\n\n我这边开通了自营购买地址，提供：\n• Gemini Pro 成品号\n• Codex Plus 兑换码\n• 购买账号赠送 Antigravity 无感切号方案\n\n如果你刚好有这方面需求，欢迎前往选购支持。",
-          "actionLabel": "前往选购"
+          "title": "📣 Kenny 资源服务入口",
+          "summary": "提供Gemini认证、成品号、gmail邮箱等。",
+          "content": "为了方便大家快速使用，这里整理了统一入口，当前可提供：\n• Gemini认证\n• 成品号\n• gmail邮箱\n\n如有需要，可直接进入查看。",
+          "actionLabel": "立即前往"
         },
         "en-US": {
-          "title": "🛒 作者自营账号与兑换码渠道上线",
-          "summary": "提供 Gemini Pro 成品号与 Codex Plus 兑换码，购买账号赠送 Antigravity 无感切号方案。",
-          "content": "感谢大家一直以来对项目的支持！\n\n我这边开通了自营购买地址，提供：\n• Gemini Pro 成品号\n• Codex Plus 兑换码\n• 购买账号赠送 Antigravity 无感切号方案\n\n如果你刚好有这方面需求，欢迎前往选购支持。",
-          "actionLabel": "前往选购"
+          "title": "📣 Kenny Resource Hub",
+          "summary": "Gemini verification, ready-to-use accounts, Gmail mailboxes, and more.",
+          "content": "This unified entry is prepared for quick access. Available services include:\n• Gemini verification\n• Ready-to-use accounts\n• Gmail mailboxes\n\nOpen the link to view details.",
+          "actionLabel": "Open Now"
         },
         "en": {
-          "title": "🛒 作者自营账号与兑换码渠道上线",
-          "summary": "提供 Gemini Pro 成品号与 Codex Plus 兑换码，购买账号赠送 Antigravity 无感切号方案。",
-          "content": "感谢大家一直以来对项目的支持！\n\n我这边开通了自营购买地址，提供：\n• Gemini Pro 成品号\n• Codex Plus 兑换码\n• 购买账号赠送 Antigravity 无感切号方案\n\n如果你刚好有这方面需求，欢迎前往选购支持。",
-          "actionLabel": "前往选购"
+          "title": "📣 Kenny Resource Hub",
+          "summary": "Gemini verification, ready-to-use accounts, Gmail mailboxes, and more.",
+          "content": "This unified entry is prepared for quick access. Available services include:\n• Gemini verification\n• Ready-to-use accounts\n• Gmail mailboxes\n\nOpen the link to view details.",
+          "actionLabel": "Open Now"
         }
       }
     },

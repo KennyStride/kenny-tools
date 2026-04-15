@@ -1,11 +1,11 @@
-# Cockpit Tools
+# Kenny-Tools
 
 [English](README.en.md) · 简体中文
 
-[![GitHub stars](https://img.shields.io/github/stars/jlcodes99/cockpit-tools?style=flat&color=gold)](https://github.com/jlcodes99/cockpit-tools)
-[![GitHub downloads](https://img.shields.io/github/downloads/jlcodes99/cockpit-tools/total?style=flat&color=blue)](https://github.com/jlcodes99/cockpit-tools/releases)
-[![GitHub release](https://img.shields.io/github/v/release/jlcodes99/cockpit-tools?style=flat)](https://github.com/jlcodes99/cockpit-tools/releases)
-[![GitHub issues](https://img.shields.io/github/issues/jlcodes99/cockpit-tools)](https://github.com/jlcodes99/cockpit-tools/issues)
+[![GitHub stars](https://img.shields.io/github/stars/KennyStride/kenny-tools?style=flat&color=gold)](https://github.com/KennyStride/kenny-tools)
+[![GitHub downloads](https://img.shields.io/github/downloads/KennyStride/kenny-tools/total?style=flat&color=blue)](https://github.com/KennyStride/kenny-tools/releases)
+[![GitHub release](https://img.shields.io/github/v/release/KennyStride/kenny-tools?style=flat)](https://github.com/KennyStride/kenny-tools/releases)
+[![GitHub issues](https://img.shields.io/github/issues/KennyStride/kenny-tools)](https://github.com/KennyStride/kenny-tools/issues)
 
 一款**通用的 AI IDE 账号管理工具**，目前支持 **Antigravity**、**Codex**、**GitHub Copilot**、**Windsurf**、**Kiro**、**Cursor**、**Gemini Cli**、**CodeBuddy**、**CodeBuddy CN**、**Qoder**、**Trae** 和 **Zed**，并支持多账号多实例并行运行。
 
@@ -13,7 +13,7 @@
 
 | 赞助商 (Sponsor) | 简介 (Description) |
 | :---: | :--- |
-| **🛒 [https://xiangzili.xyz](https://xiangzili.xyz)** | 作者自营买号地址，提供 Gemini Pro 成品号与 Codex Plus 兑换码；购买账号即送 Antigravity 无感切号方案。 |
+| **🛒 [https://car.kennygmail.com/](https://car.kennygmail.com/)** | 提供Gemini认证、成品号、gmail邮箱等。 |
 
 > 本工具旨在帮助用户高效管理多个 AI IDE 账号，支持一键切换、配额监控、自动唤醒与多开实例并行运行，助您充分利用不同账号的资源。
 
@@ -291,7 +291,7 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
 
 ### 选项 A: 手动下载 (推荐)
 
-前往 [GitHub Releases](https://github.com/jlcodes99/cockpit-tools/releases) 下载对应系统的安装包：
+前往 [GitHub Releases](https://github.com/KennyStride/kenny-tools/releases) 下载对应系统的安装包：
 
 *   **macOS**: `.dmg` (Apple Silicon & Intel)
 *   **Windows**: `.msi` (推荐) 或 `.exe`
@@ -302,7 +302,7 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
 > 需要先安装 Homebrew。
 
 ```bash
-brew tap jlcodes99/cockpit-tools https://github.com/jlcodes99/cockpit-tools
+brew tap KennyStride/kenny-tools https://github.com/KennyStride/kenny-tools
 brew install --cask cockpit-tools
 ```
 
@@ -312,10 +312,10 @@ brew install --cask cockpit-tools
 brew install --cask --no-quarantine cockpit-tools
 ```
 
-如果提示已存在应用（例如：`already an App at '/Applications/Cockpit Tools.app'`），请先删除旧版本再安装：
+如果提示已存在应用（例如：`already an App at '/Applications/Kenny-Tools.app'`），请先删除旧版本再安装：
 
 ```bash
-rm -rf "/Applications/Cockpit Tools.app"
+rm -rf "/Applications/Kenny-Tools.app"
 brew install --cask cockpit-tools
 ```
 
@@ -345,7 +345,7 @@ yay -S cockpit-tools-bin
 1.  **命令行修复** (推荐):
     打开终端，执行以下命令：
     ```bash
-    sudo xattr -rd com.apple.quarantine "/Applications/Cockpit Tools.app"
+    sudo xattr -rd com.apple.quarantine "/Applications/Kenny-Tools.app"
     ```
     > **注意**: 如果您修改了应用名称，请在命令中相应调整路径。
 
@@ -383,7 +383,7 @@ npm run tauri build
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jlcodes99/cockpit-tools&type=Date)](https://star-history.com/#jlcodes99/cockpit-tools&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=KennyStride/kenny-tools&type=Date)](https://star-history.com/#KennyStride/kenny-tools&Date)
 
 ---
 

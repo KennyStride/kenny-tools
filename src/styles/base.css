@@ -1,104 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 /* ============================================
-   Kenny-Tools - Design System
-   Brand Direction: warm amber + carbon slate with glass surfaces
+   Kenny-Tools - Nova Identity
+   Direction: cobalt + cyan + lime (clean tech)
    ============================================ */
 
 :root {
   /* Typography */
-  --font-sans: 'Sora', 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+  --font-sans: 'Outfit', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Mono', monospace;
 
   /* Brand Colors */
-  --primary: #d97706;
-  --primary-hover: #b45309;
-  --primary-light: rgba(217, 119, 6, 0.14);
-  --accent: #0f766e;
+  --primary: #0891b2;
+  --primary-hover: #0e7490;
+  --primary-light: rgba(8, 145, 178, 0.16);
+  --accent: #22c55e;
 
   /* Status Colors */
   --success: #16a34a;
-  --warning: #f59e0b;
-  --warning-strong: #ea580c;
+  --warning: #d97706;
+  --warning-strong: #dc2626;
   --danger: #dc2626;
 
-  /* Background Colors */
-  --bg-primary: #f6f2e9;
-  /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #fffcf5;
+  /* Surfaces */
+  --bg-primary: #f3f8ff;
+  --bg-secondary: #ffffff;
   --bg-surface: var(--bg-secondary);
-  /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #f0e8db;
-  --bg-card: rgba(255, 253, 248, 0.86);
-  --bg-hover: rgba(120, 53, 15, 0.1);
+  --bg-tertiary: #e9f2ff;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-hover: rgba(8, 145, 178, 0.1);
 
-  /* Text Colors */
-  --text-primary: #1f2937;
-  --text-secondary: #4b5563;
-  --text-muted: #9ca3af;
+  /* Text */
+  --text-primary: #0b1220;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
 
-  /* Border Colors */
-  --border: rgba(120, 53, 15, 0.16);
-  --border-light: rgba(120, 53, 15, 0.1);
+  /* Borders */
+  --border: rgba(15, 23, 42, 0.14);
+  --border-light: rgba(15, 23, 42, 0.08);
 
-  /* Shadows */
-  --shadow-sm: 0 6px 14px rgba(120, 53, 15, 0.09);
-  --shadow-md: 0 14px 30px rgba(120, 53, 15, 0.16);
-  --shadow-lg: 0 24px 48px rgba(120, 53, 15, 0.22);
+  /* Elevation */
+  --shadow-sm: 0 8px 18px rgba(15, 23, 42, 0.09);
+  --shadow-md: 0 16px 30px rgba(15, 23, 42, 0.14);
+  --shadow-lg: 0 28px 56px rgba(15, 23, 42, 0.2);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #d97706 0%, #0f766e 100%);
+  --gradient-primary: linear-gradient(135deg, #0284c7 0%, #22c55e 100%);
   --gradient-success: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
-  --gradient-danger: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+  --gradient-danger: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
 
   /* Radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   --radius-full: 9999px;
 
-  /* Component sizing */
   --modal-close-icon-size: 16px;
 }
 
-/* === Dark Theme === */
 [data-theme="dark"] {
-  /* Brand Colors - slightly brighter for dark mode */
-  --primary: #f59e0b;
-  --primary-hover: #d97706;
-  --primary-light: rgba(245, 158, 11, 0.2);
-  --accent: #14b8a6;
+  --primary: #22d3ee;
+  --primary-hover: #06b6d4;
+  --primary-light: rgba(34, 211, 238, 0.2);
+  --accent: #4ade80;
 
-  /* Status Colors */
-  --success: #22c55e;
+  --success: #4ade80;
   --warning: #f59e0b;
   --warning-strong: #f97316;
-  --danger: #ef4444;
+  --danger: #f87171;
 
-  /* Background Colors - dark palette */
-  --bg-primary: #11151a;
-  /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #1d2430;
+  --bg-primary: #050b15;
+  --bg-secondary: #0d1624;
   --bg-surface: var(--bg-secondary);
-  /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #2a3444;
-  --bg-card: rgba(29, 36, 48, 0.9);
-  --bg-hover: rgba(245, 158, 11, 0.12);
+  --bg-tertiary: #172336;
+  --bg-card: rgba(13, 22, 36, 0.86);
+  --bg-hover: rgba(34, 211, 238, 0.14);
 
-  /* Text Colors - inverted */
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
 
-  /* Border Colors */
-  --border: rgba(245, 158, 11, 0.22);
-  --border-light: rgba(245, 158, 11, 0.14);
+  --border: rgba(148, 163, 184, 0.24);
+  --border-light: rgba(148, 163, 184, 0.14);
 
-  /* Shadows - darker */
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 8px 20px rgba(2, 6, 23, 0.5);
+  --shadow-md: 0 20px 36px rgba(2, 6, 23, 0.55);
+  --shadow-lg: 0 36px 64px rgba(2, 6, 23, 0.6);
 
   color-scheme: dark;
 }
@@ -111,21 +99,23 @@
 
 body {
   font-family: var(--font-sans);
-  background: radial-gradient(circle at 6% 8%, rgba(245, 158, 11, 0.22), transparent 38%),
-    radial-gradient(circle at 84% 4%, rgba(20, 184, 166, 0.16), transparent 34%),
-    radial-gradient(circle at 20% 96%, rgba(180, 83, 9, 0.12), transparent 44%),
-    linear-gradient(160deg, #fff9f0 0%, #f7efe2 100%);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(14, 165, 233, 0.22), transparent 34%),
+    radial-gradient(circle at 92% 6%, rgba(34, 197, 94, 0.18), transparent 30%),
+    radial-gradient(circle at 20% 96%, rgba(56, 189, 248, 0.16), transparent 40%),
+    linear-gradient(165deg, #f8fbff 0%, #edf5ff 54%, #e8f4ff 100%);
   color: var(--text-primary);
   line-height: 1.6;
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dark mode body background */
 [data-theme="dark"] body,
 html[data-theme="dark"] body {
-  background: radial-gradient(circle at 10% 8%, rgba(245, 158, 11, 0.22), transparent 42%),
-    radial-gradient(circle at 88% 6%, rgba(20, 184, 166, 0.2), transparent 36%),
-    linear-gradient(160deg, #0f1318 0%, #1a2432 100%);
+  background:
+    radial-gradient(circle at 10% 8%, rgba(6, 182, 212, 0.24), transparent 36%),
+    radial-gradient(circle at 88% 6%, rgba(74, 222, 128, 0.16), transparent 34%),
+    radial-gradient(circle at 20% 96%, rgba(14, 165, 233, 0.18), transparent 42%),
+    linear-gradient(165deg, #030712 0%, #071126 56%, #0b1b2f 100%);
   color-scheme: dark;
 }

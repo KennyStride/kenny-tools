@@ -7,6 +7,12 @@ All notable changes to Cockpit Tools will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
+## [0.21.6] - 2026-04-15
+
+### Fixed
+- **Tauri lockfile plugin versions are now aligned with the frontend plugin minors**: updated `Cargo.lock` to use `tauri-plugin-dialog v2.7.0` and `tauri-plugin-fs v2.5.0`, resolving the release-time `Found version mismatched Tauri packages` failure that blocked all platform builds.
+
+---
 ## [0.21.5] - 2026-04-15
 
 ### Fixed

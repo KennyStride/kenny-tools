@@ -7,6 +7,12 @@
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)。
 
 ---
+## [0.21.6] - 2026-04-15
+
+### 修复
+- **Tauri 锁文件中的插件版本已与前端插件小版本对齐**：将 `Cargo.lock` 中 `tauri-plugin-dialog` 升级到 `v2.7.0`、`tauri-plugin-fs` 升级到 `v2.5.0`，修复发布阶段 `Found version mismatched Tauri packages` 报错，解除全平台构建阻塞。
+
+---
 ## [0.21.5] - 2026-04-15
 
 ### 修复

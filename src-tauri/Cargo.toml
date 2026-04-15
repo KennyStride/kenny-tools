@@ -1,6 +1,6 @@
 [package]
 name = "kenny-tools"
-version = "0.21.5"
+version = "0.21.6"
 description = "Kenny-Tools"
 authors = ["Kenny"]
 license = "CC-BY-NC-SA-4.0"

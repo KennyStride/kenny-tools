@@ -2062,6 +2062,50 @@ export function DashboardPage({
     return rows;
   }, [visibleCardPlatformIds]);
 
+  const entryOverview = useMemo(() => {
+    return visibleEntryOrder
+      .map((entryId) => {
+        const platformId = resolveEntryDefaultPlatformId(entryId, platformGroups);
+        if (!platformId) {
+          return null;
+        }
+        const groupId = parseGroupEntryId(entryId);
+        const group = groupId ? platformGroups.find((item) => item.id === groupId) : null;
+        const label = group ? group.name : getPlatformLabel(platformId, t);
+        return {
+          entryId,
+          platformId,
+          label,
+          count: entryCounts.get(entryId) ?? 0,
+        };
+      })
+      .filter(
+        (
+          item,
+        ): item is {
+          entryId: PlatformLayoutEntryId;
+          platformId: PlatformId;
+          label: string;
+          count: number;
+        } => !!item,
+      );
+  }, [entryCounts, platformGroups, t, visibleEntryOrder]);
+
+  const activePlatformCount = useMemo(
+    () => entryOverview.filter((item) => item.count > 0).length,
+    [entryOverview],
+  );
+
+  const topEntryOverview = useMemo(
+    () => [...entryOverview].sort((a, b) => b.count - a.count).slice(0, 6),
+    [entryOverview],
+  );
+
+  const topEntryMaxCount = useMemo(
+    () => topEntryOverview.reduce((max, item) => Math.max(max, item.count), 0),
+    [topEntryOverview],
+  );
+
   const renderPlatformCard = (platformId: PlatformId) => {
     if (platformId === 'antigravity') {
       return (
@@ -2695,6 +2739,69 @@ export function DashboardPage({
            <AnnouncementCenter onNavigate={onNavigate} variant="inline" trigger="button" />
          </div>
       </div>
+
+      <section className="dashboard-command-grid">
+        <div className="dashboard-command-panel">
+          <span className="dashboard-command-kicker">Kenny Command Deck</span>
+          <h2 className="dashboard-command-title">
+            {t('dashboard.commandTitle', '多平台账号驾驶舱')}
+          </h2>
+          <p className="dashboard-command-desc">
+            {t('dashboard.commandDesc', '当前已接入 {{active}} / {{total}} 个平台，可统一查看账号健康度与推荐切换。', {
+              active: activePlatformCount,
+              total: entryOverview.length,
+            })}
+          </p>
+          <div className="dashboard-command-pills">
+            <span className="dashboard-command-pill is-primary">
+              {t('dashboard.totalAccounts', '账号总数')} · {stats.total}
+            </span>
+            <span className="dashboard-command-pill is-success">
+              {t('dashboard.commandActivePlatforms', '活跃平台')} · {activePlatformCount}
+            </span>
+            <span className="dashboard-command-pill is-muted">
+              {t('dashboard.commandEmptyPlatforms', '空平台')} · {Math.max(entryOverview.length - activePlatformCount, 0)}
+            </span>
+          </div>
+          <div className="dashboard-command-actions">
+            <button className="dashboard-command-btn" onClick={() => onNavigate('overview')}>
+              {t('dashboard.viewAllAccounts', '查看所有账号')}
+            </button>
+            <button className="dashboard-command-btn secondary" onClick={onOpenPlatformLayout}>
+              {t('platformLayout.title', '平台布局')}
+            </button>
+          </div>
+        </div>
+
+        <div className="dashboard-health-panel">
+          <div className="dashboard-health-head">
+            <span>{t('dashboard.platformDistribution', '平台分布')}</span>
+            <strong>{entryOverview.length}</strong>
+          </div>
+          <div className="dashboard-health-list">
+            {topEntryOverview.map((item) => {
+              const ratio = topEntryMaxCount > 0 ? (item.count / topEntryMaxCount) * 100 : 0;
+              return (
+                <button
+                  key={item.entryId}
+                  className="dashboard-health-item"
+                  onClick={() => onNavigate(PLATFORM_PAGE_MAP[item.platformId])}
+                  title={t('dashboard.switchTo', '切换到此账号')}
+                >
+                  <span className="dashboard-health-name">{item.label}</span>
+                  <span className="dashboard-health-bar-track">
+                    <span
+                      className="dashboard-health-bar-fill"
+                      style={{ width: `${Math.max(8, Math.round(ratio))}%` }}
+                    />
+                  </span>
+                  <span className="dashboard-health-count">{item.count}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       {/* Top Stats */}
       <div className="stats-row">

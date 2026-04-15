@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 /* ============================================
    Kenny-Tools - Design System
@@ -7,8 +7,8 @@
 
 :root {
   /* Typography */
-  --font-sans: 'Manrope', 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'SFMono-Regular', monospace;
+  --font-sans: 'Sora', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
 
   /* Brand Colors */
   --primary: #d97706;
@@ -23,14 +23,14 @@
   --danger: #dc2626;
 
   /* Background Colors */
-  --bg-primary: #f8f5ef;
+  --bg-primary: #f6f2e9;
   /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #fffdf8;
+  --bg-secondary: #fffcf5;
   --bg-surface: var(--bg-secondary);
   /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #f1ebe1;
-  --bg-card: rgba(255, 253, 248, 0.78);
-  --bg-hover: rgba(120, 53, 15, 0.08);
+  --bg-tertiary: #f0e8db;
+  --bg-card: rgba(255, 253, 248, 0.86);
+  --bg-hover: rgba(120, 53, 15, 0.1);
 
   /* Text Colors */
   --text-primary: #1f2937;
@@ -42,9 +42,9 @@
   --border-light: rgba(120, 53, 15, 0.1);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(120, 53, 15, 0.08);
-  --shadow-md: 0 12px 24px rgba(120, 53, 15, 0.14);
-  --shadow-lg: 0 20px 40px rgba(120, 53, 15, 0.2);
+  --shadow-sm: 0 6px 14px rgba(120, 53, 15, 0.09);
+  --shadow-md: 0 14px 30px rgba(120, 53, 15, 0.16);
+  --shadow-lg: 0 24px 48px rgba(120, 53, 15, 0.22);
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #d97706 0%, #0f766e 100%);
@@ -77,13 +77,13 @@
   --danger: #ef4444;
 
   /* Background Colors - dark palette */
-  --bg-primary: #111827;
+  --bg-primary: #11151a;
   /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #1f2937;
+  --bg-secondary: #1d2430;
   --bg-surface: var(--bg-secondary);
   /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #374151;
-  --bg-card: rgba(31, 41, 55, 0.88);
+  --bg-tertiary: #2a3444;
+  --bg-card: rgba(29, 36, 48, 0.9);
   --bg-hover: rgba(245, 158, 11, 0.12);
 
   /* Text Colors - inverted */
@@ -111,10 +111,10 @@
 
 body {
   font-family: var(--font-sans);
-  background: radial-gradient(circle at 8% 10%, rgba(217, 119, 6, 0.14), transparent 42%),
-    radial-gradient(circle at 90% 5%, rgba(15, 118, 110, 0.12), transparent 38%),
-    radial-gradient(circle at 50% 100%, rgba(180, 83, 9, 0.08), transparent 45%),
-    linear-gradient(180deg, #fdf8f1 0%, #f3eee5 100%);
+  background: radial-gradient(circle at 6% 8%, rgba(245, 158, 11, 0.22), transparent 38%),
+    radial-gradient(circle at 84% 4%, rgba(20, 184, 166, 0.16), transparent 34%),
+    radial-gradient(circle at 20% 96%, rgba(180, 83, 9, 0.12), transparent 44%),
+    linear-gradient(160deg, #fff9f0 0%, #f7efe2 100%);
   color: var(--text-primary);
   line-height: 1.6;
   color-scheme: light;
@@ -124,8 +124,8 @@ body {
 /* Dark mode body background */
 [data-theme="dark"] body,
 html[data-theme="dark"] body {
-  background: radial-gradient(circle at 12% 10%, rgba(245, 158, 11, 0.16), transparent 45%),
-    radial-gradient(circle at 86% 8%, rgba(20, 184, 166, 0.14), transparent 42%),
-    linear-gradient(180deg, #111827 0%, #1f2937 100%);
+  background: radial-gradient(circle at 10% 8%, rgba(245, 158, 11, 0.22), transparent 42%),
+    radial-gradient(circle at 88% 6%, rgba(20, 184, 166, 0.2), transparent 36%),
+    linear-gradient(160deg, #0f1318 0%, #1a2432 100%);
   color-scheme: dark;
 }

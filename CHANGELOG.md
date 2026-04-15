@@ -7,6 +7,12 @@ All notable changes to Cockpit Tools will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
+## [0.21.7] - 2026-04-15
+
+### Changed
+- **Unsigned fork releases now focus on Windows artifact delivery**: when signing secrets are absent, the release workflow now creates the draft release and builds/uploads only Windows bundles (`.exe` and `.msi`), while non-Windows matrix jobs skip unsigned build/upload steps to avoid unrelated platform failures blocking the Windows release.
+
+---
 ## [0.21.6] - 2026-04-15
 
 ### Fixed

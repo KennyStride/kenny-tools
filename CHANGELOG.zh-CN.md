@@ -7,6 +7,12 @@
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)。
 
 ---
+## [0.21.7] - 2026-04-15
+
+### 变更
+- **Fork 且无签名密钥时的发布流程现聚焦 Windows 产物交付**：当仓库未配置签名密钥时，发布流程只在 Windows 任务中创建草稿 Release 并构建/上传 `.exe` 与 `.msi`，其他平台在无签名路径下直接跳过构建与上传，避免被非 Windows 平台失败阻断 Windows 发版。
+
+---
 ## [0.21.6] - 2026-04-15
 
 ### 修复

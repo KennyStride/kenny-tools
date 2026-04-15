@@ -199,7 +199,7 @@ jobs:
           args: ${{ matrix.args }}
 
       - name: Ensure draft release exists (unsigned path)
-        if: needs.release-flags.outputs.has_tauri_signing_key != 'true'
+        if: needs.release-flags.outputs.has_tauri_signing_key != 'true' && matrix.platform == 'windows-latest'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: "v${{ steps.app_version.outputs.VERSION }}"
@@ -210,7 +210,7 @@ jobs:
           fail_on_unmatched_files: false
 
       - name: Build the app (unsigned artifacts)
-        if: needs.release-flags.outputs.has_tauri_signing_key != 'true'
+        if: needs.release-flags.outputs.has_tauri_signing_key != 'true' && matrix.platform == 'windows-latest'
         shell: bash
         run: npm run tauri build -- ${{ matrix.args }}
 
@@ -223,29 +223,6 @@ jobs:
           files: |
             src-tauri/target/**/bundle/msi/*.msi
             src-tauri/target/**/bundle/nsis/*.exe
-          fail_on_unmatched_files: true
-
-      - name: Upload unsigned Linux artifacts
-        if: needs.release-flags.outputs.has_tauri_signing_key != 'true' && startsWith(matrix.platform, 'ubuntu')
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: "v${{ steps.app_version.outputs.VERSION }}"
-          draft: true
-          files: |
-            src-tauri/target/**/bundle/appimage/*.AppImage
-            src-tauri/target/**/bundle/deb/*.deb
-            src-tauri/target/**/bundle/rpm/*.rpm
-          fail_on_unmatched_files: false
-
-      - name: Upload unsigned macOS artifacts
-        if: needs.release-flags.outputs.has_tauri_signing_key != 'true' && matrix.platform == 'macos-latest'
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: "v${{ steps.app_version.outputs.VERSION }}"
-          draft: true
-          files: |
-            src-tauri/target/**/bundle/dmg/*.dmg
-            src-tauri/target/**/bundle/macos/*.app.tar.gz
           fail_on_unmatched_files: true
 
   rebuild-latest-json:

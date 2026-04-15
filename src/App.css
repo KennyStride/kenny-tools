@@ -92,9 +92,9 @@
   gap: 8px;
   padding: 5px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(217, 119, 6, 0.24);
   background:
-    linear-gradient(180deg, rgba(59, 130, 246, 0.06) 0%, rgba(59, 130, 246, 0) 100%),
+    linear-gradient(180deg, rgba(217, 119, 6, 0.08) 0%, rgba(217, 119, 6, 0) 100%),
     var(--bg-card);
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(8px);
@@ -113,7 +113,7 @@
   height: 18px;
   padding: 0 7px;
   border-radius: 999px;
-  background: rgba(37, 99, 235, 0.12);
+  background: rgba(217, 119, 6, 0.14);
   color: var(--primary);
   display: inline-flex;
   align-items: center;
@@ -140,8 +140,8 @@
   height: 22px;
   padding: 0 8px;
   border-radius: 999px;
-  border: 1px solid rgba(37, 99, 235, 0.24);
-  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.28);
+  background: rgba(217, 119, 6, 0.1);
   color: var(--primary);
   font-size: 11px;
   font-weight: 600;
@@ -150,8 +150,8 @@
 }
 
 .global-ad-slot-action:hover {
-  background: rgba(37, 99, 235, 0.14);
-  border-color: rgba(37, 99, 235, 0.4);
+  background: rgba(217, 119, 6, 0.18);
+  border-color: rgba(217, 119, 6, 0.45);
 }
 
 @media (max-width: 1180px) {

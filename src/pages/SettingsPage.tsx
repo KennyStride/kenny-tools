@@ -172,6 +172,13 @@ const ANTIGRAVITY_SEAMLESS_SWITCH_UNLOCK_REQUIRED_TAPS = 10;
 const UNLOCK_FIREWORKS_VISIBLE_MS = 6000;
 const AUTO_SWITCH_SCOPE_ALL_ACCOUNTS: AutoSwitchAccountScopeMode = 'all_accounts';
 const AUTO_SWITCH_SCOPE_SELECTED_ACCOUNTS: AutoSwitchAccountScopeMode = 'selected_accounts';
+const BRAND_APP_NAME = 'Kenny-Tools';
+const BRAND_AUTHOR_NAME = 'Kenny';
+const BRAND_GITHUB_OWNER = 'KennyStride';
+const BRAND_REPO_NAME = 'kenny-tools';
+const BRAND_REPO_URL = `https://github.com/${BRAND_GITHUB_OWNER}/${BRAND_REPO_NAME}`;
+const BRAND_DONATE_URL = `${BRAND_REPO_URL}/blob/main/docs/DONATE.md`;
+const BRAND_ISSUES_URL = `${BRAND_REPO_URL}/issues`;
 const FALLBACK_PLATFORM_SETTINGS_ORDER: Record<PlatformId, number> = {
   antigravity: 0,
   codex: 1,
@@ -4934,7 +4941,7 @@ export function SettingsPage() {
                 <Rocket size={40} />
               </div>
               <div className="app-info">
-                <h2>{t('settings.about.appName')}</h2>
+                <h2>{BRAND_APP_NAME}</h2>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <div className="version-tag">{appVersion}</div>
                   <button 
@@ -4965,31 +4972,31 @@ export function SettingsPage() {
                 )}
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
-                {t('settings.about.slogan')}
+                Manage all your AI IDE accounts in one cockpit.
               </p>
             </div>
 
             <div className="credits-list">
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99')}>
+              <button className="credit-item" onClick={() => openLink(`https://github.com/${BRAND_GITHUB_OWNER}`)}>
                 <div className="credit-icon"><User size={24} /></div>
                 <h3>{t('settings.about.author')}</h3>
-                <p>jlcodes99</p>
+                <p>{BRAND_AUTHOR_NAME}</p>
               </button>
               
               
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools')}>
+              <button className="credit-item" onClick={() => openLink(BRAND_REPO_URL)}>
                 <div className="credit-icon" style={{ color: '#0f172a' }}><Github size={24} /></div>
                 <h3>{t('settings.about.github')}</h3>
-                <p>cockpit-tools</p>
+                <p>{BRAND_REPO_NAME}</p>
               </button>
 
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools/blob/main/docs/DONATE.md')}>
+              <button className="credit-item" onClick={() => openLink(BRAND_DONATE_URL)}>
                 <div className="credit-icon" style={{ color: '#ef4444' }}><Heart size={24} /></div>
                 <h3>{t('settings.about.sponsor')}</h3>
                 <p>{t('settings.about.sponsorDesc', 'Donate')}</p>
               </button>
 
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools/issues')}>
+              <button className="credit-item" onClick={() => openLink(BRAND_ISSUES_URL)}>
                 <div className="credit-icon" style={{ color: '#3b82f6' }}><MessageSquare size={24} /></div>
                 <h3>{t('settings.about.feedback', '意见反馈')}</h3>
                 <p>{t('settings.about.feedbackDesc', 'Issues')}</p>

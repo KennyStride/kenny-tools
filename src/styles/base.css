@@ -1,55 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
 
 /* ============================================
-   Cockpit Tools - Design System
-   Brand Direction: floating dashboard with soft gradients
+   Kenny-Tools - Design System
+   Brand Direction: warm amber + carbon slate with glass surfaces
    ============================================ */
 
 :root {
   /* Typography */
-  --font-sans: 'Inter', 'Segoe UI', sans-serif;
+  --font-sans: 'Manrope', 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'SFMono-Regular', monospace;
 
   /* Brand Colors */
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --primary-light: rgba(29, 78, 216, 0.12);
-  --accent: #0ea5a5;
+  --primary: #d97706;
+  --primary-hover: #b45309;
+  --primary-light: rgba(217, 119, 6, 0.14);
+  --accent: #0f766e;
 
   /* Status Colors */
-  --success: #22c55e;
+  --success: #16a34a;
   --warning: #f59e0b;
-  --warning-strong: #f97316;
-  --danger: #ef4444;
+  --warning-strong: #ea580c;
+  --danger: #dc2626;
 
   /* Background Colors */
-  --bg-primary: #f6f5f2;
+  --bg-primary: #f8f5ef;
   /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #ffffff;
+  --bg-secondary: #fffdf8;
   --bg-surface: var(--bg-secondary);
   /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #eef2f7;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --bg-hover: rgba(15, 23, 42, 0.06);
+  --bg-tertiary: #f1ebe1;
+  --bg-card: rgba(255, 253, 248, 0.78);
+  --bg-hover: rgba(120, 53, 15, 0.08);
 
   /* Text Colors */
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
 
   /* Border Colors */
-  --border: rgba(15, 23, 42, 0.12);
-  --border-light: rgba(15, 23, 42, 0.08);
+  --border: rgba(120, 53, 15, 0.16);
+  --border-light: rgba(120, 53, 15, 0.1);
 
   /* Shadows */
-  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.08);
-  --shadow-md: 0 12px 24px rgba(15, 23, 42, 0.12);
-  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.18);
+  --shadow-sm: 0 2px 8px rgba(120, 53, 15, 0.08);
+  --shadow-md: 0 12px 24px rgba(120, 53, 15, 0.14);
+  --shadow-lg: 0 20px 40px rgba(120, 53, 15, 0.2);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #1d4ed8 0%, #0ea5a5 100%);
-  --gradient-success: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-  --gradient-danger: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  --gradient-primary: linear-gradient(135deg, #d97706 0%, #0f766e 100%);
+  --gradient-success: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  --gradient-danger: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
 
   /* Radius */
   --radius-sm: 8px;
@@ -65,9 +65,9 @@
 /* === Dark Theme === */
 [data-theme="dark"] {
   /* Brand Colors - slightly brighter for dark mode */
-  --primary: #3b82f6;
-  --primary-hover: #2563eb;
-  --primary-light: rgba(59, 130, 246, 0.15);
+  --primary: #f59e0b;
+  --primary-hover: #d97706;
+  --primary-light: rgba(245, 158, 11, 0.2);
   --accent: #14b8a6;
 
   /* Status Colors */
@@ -77,23 +77,23 @@
   --danger: #ef4444;
 
   /* Background Colors - dark palette */
-  --bg-primary: #0f172a;
+  --bg-primary: #111827;
   /* Solid surfaces: dialogs / dropdowns / menus (no transparency) */
-  --bg-secondary: #1e293b;
+  --bg-secondary: #1f2937;
   --bg-surface: var(--bg-secondary);
   /* Soft panels: cards / list rows (slight transparency to show gradient) */
-  --bg-tertiary: #334155;
-  --bg-card: rgba(30, 41, 59, 0.85);
-  --bg-hover: rgba(255, 255, 255, 0.08);
+  --bg-tertiary: #374151;
+  --bg-card: rgba(31, 41, 55, 0.88);
+  --bg-hover: rgba(245, 158, 11, 0.12);
 
   /* Text Colors - inverted */
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
 
   /* Border Colors */
-  --border: rgba(255, 255, 255, 0.12);
-  --border-light: rgba(255, 255, 255, 0.06);
+  --border: rgba(245, 158, 11, 0.22);
+  --border-light: rgba(245, 158, 11, 0.14);
 
   /* Shadows - darker */
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -111,9 +111,10 @@
 
 body {
   font-family: var(--font-sans);
-  background: radial-gradient(circle at 12% 10%, rgba(29, 78, 216, 0.12), transparent 45%),
-    radial-gradient(circle at 90% 5%, rgba(14, 165, 165, 0.12), transparent 40%),
-    linear-gradient(180deg, #f8f7f4 0%, #eef1f6 100%);
+  background: radial-gradient(circle at 8% 10%, rgba(217, 119, 6, 0.14), transparent 42%),
+    radial-gradient(circle at 90% 5%, rgba(15, 118, 110, 0.12), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(180, 83, 9, 0.08), transparent 45%),
+    linear-gradient(180deg, #fdf8f1 0%, #f3eee5 100%);
   color: var(--text-primary);
   line-height: 1.6;
   color-scheme: light;
@@ -123,8 +124,8 @@ body {
 /* Dark mode body background */
 [data-theme="dark"] body,
 html[data-theme="dark"] body {
-  background: radial-gradient(circle at 12% 10%, rgba(59, 130, 246, 0.15), transparent 45%),
-    radial-gradient(circle at 90% 5%, rgba(20, 184, 166, 0.12), transparent 40%),
-    linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  background: radial-gradient(circle at 12% 10%, rgba(245, 158, 11, 0.16), transparent 45%),
+    radial-gradient(circle at 86% 8%, rgba(20, 184, 166, 0.14), transparent 42%),
+    linear-gradient(180deg, #111827 0%, #1f2937 100%);
   color-scheme: dark;
 }

@@ -1,11 +1,11 @@
-# Cockpit Tools
+# Kenny-Tools
 
 English · [简体中文](README.md)
 
-[![GitHub stars](https://img.shields.io/github/stars/jlcodes99/cockpit-tools?style=flat&color=gold)](https://github.com/jlcodes99/cockpit-tools)
-[![GitHub downloads](https://img.shields.io/github/downloads/jlcodes99/cockpit-tools/total?style=flat&color=blue)](https://github.com/jlcodes99/cockpit-tools/releases)
-[![GitHub release](https://img.shields.io/github/v/release/jlcodes99/cockpit-tools?style=flat)](https://github.com/jlcodes99/cockpit-tools/releases)
-[![GitHub issues](https://img.shields.io/github/issues/jlcodes99/cockpit-tools)](https://github.com/jlcodes99/cockpit-tools/issues)
+[![GitHub stars](https://img.shields.io/github/stars/KennyStride/kenny-tools?style=flat&color=gold)](https://github.com/KennyStride/kenny-tools)
+[![GitHub downloads](https://img.shields.io/github/downloads/KennyStride/kenny-tools/total?style=flat&color=blue)](https://github.com/KennyStride/kenny-tools/releases)
+[![GitHub release](https://img.shields.io/github/v/release/KennyStride/kenny-tools?style=flat)](https://github.com/KennyStride/kenny-tools/releases)
+[![GitHub issues](https://img.shields.io/github/issues/KennyStride/kenny-tools)](https://github.com/KennyStride/kenny-tools/issues)
 
 A **universal AI IDE account management tool**, currently supporting **Antigravity**, **Codex**, **GitHub Copilot**, **Windsurf**, **Kiro**, **Cursor**, **Gemini Cli**, **CodeBuddy**, **CodeBuddy CN**, **Qoder**, **Trae**, and **Zed**, with multi-instance parallel workflows.
 
@@ -30,20 +30,12 @@ A brand new visual dashboard providing a one-stop status overview:
 - **Quick Actions**: One-click refresh, one-click wake-up
 - **Visual Progress**: Intuitive progress bars showing quota consumption
 
-> ![Dashboard Overview](docs/images/dashboard_overview.png)
-
 ### 2. Antigravity Account Management
 
 - **One-Click Switch**: Switch the currently active account instantly without manual login/logout
 - **Multiple Import Methods**: OAuth, Refresh Token, Plugin Sync
 - **Wake-up Tasks**: Schedule AI model wake-ups to trigger quota reset cycles in advance
 - **Device Fingerprints**: Generate, manage, and bind device fingerprints to reduce risk
-
-> ![Antigravity Accounts](docs/images/antigravity_list.png)
->
-> *(Wakeup Tasks & Device Fingerprints)*
-> ![Wakeup Tasks](docs/images/wakeup_detail.png)
-> ![Device Fingerprints](docs/images/fingerprint_detail.png)
 
 #### 2.1 Antigravity Multi-Instance
 
@@ -53,15 +45,11 @@ Run multiple Antigravity instances in parallel with different accounts. For exam
 - **Parallel Projects**: Run multiple tasks/projects at the same time
 - **Argument Isolation**: Custom instance directory and launch arguments
 
-> ![Antigravity Instances](docs/images/antigravity_instances.png)
-
 ### 3. Codex Account Management
 
 - **Dedicated Support**: Optimized account management experience for Codex
 - **Quota Display**: Clear display of Hourly and Weekly quota status
 - **Plan Recognition**: Automatically identifies account Plan types (Basic, Plus, Team, etc.)
-
-> ![Codex Accounts](docs/images/codex_list.png)
 
 #### 3.1 Codex Multi-Instance
 
@@ -70,8 +58,6 @@ Codex also supports parallel multi-instance usage. For example, open two Codex i
 - **Isolated Accounts**: Each instance binds a different account and runs independently
 - **Parallel Projects**: Run multiple tasks/projects at the same time
 - **Argument Isolation**: Custom instance directory and launch arguments
-
-> ![Codex Instances](docs/images/codex_instances.png)
 
 ### 4. GitHub Copilot Account Management
 
@@ -213,8 +199,6 @@ Manage Trae instances with isolated profiles and lifecycle controls.
 - **Personalized Settings**: Theme switching, language settings, auto-refresh interval
 - **Platform Controls**: Centralized CodeBuddy CN/Qoder/Trae/Zed launch-path and quota-alert settings
 
-> ![Settings](docs/images/settings_page.png)
-
 ---
 
 ## Security & Privacy (Plain-English)
@@ -226,7 +210,7 @@ These are the most common security questions answered directly:
   - `~/.antigravity_cockpit`: Antigravity accounts, configs, WebSocket status, etc.
   - `~/.codex`: official Codex current login `auth.json`
   - `~/.gemini`: Gemini Cli local session files (for example `oauth_creds.json`, `google_accounts.json`, `settings.json`)
-  - local app data folder under `com.antigravity.cockpit-tools`: Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini Cli / CodeBuddy / CodeBuddy CN / Qoder / Trae / Zed multi-account index data, etc.
+  - local app data folder under `com.kennygmail.kennytools`: Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini Cli / CodeBuddy / CodeBuddy CN / Qoder / Trae / Zed multi-account index data, etc.
 - **WebSocket is local-only by default**: binds to `127.0.0.1`, default port `19528`; you can disable it or change the port in Settings.
 - **When network access happens**: OAuth login, token refresh, quota fetching, update checks, and other official API requests.
 - **Practical safety tips**:
@@ -289,7 +273,7 @@ Notes:
 
 ### Option A: Manual Download (Recommended)
 
-Go to [GitHub Releases](https://github.com/jlcodes99/cockpit-tools/releases) to download the package for your system:
+Go to [GitHub Releases](https://github.com/KennyStride/kenny-tools/releases) to download the package for your system:
 
 *   **macOS**: `.dmg` (Apple Silicon & Intel)
 *   **Windows**: `.msi` (Recommended) or `.exe`
@@ -300,27 +284,27 @@ Go to [GitHub Releases](https://github.com/jlcodes99/cockpit-tools/releases) to 
 > Homebrew is required.
 
 ```bash
-brew tap jlcodes99/cockpit-tools https://github.com/jlcodes99/cockpit-tools
-brew install --cask cockpit-tools
+brew tap KennyStride/kenny-tools https://github.com/KennyStride/kenny-tools
+brew install --cask kenny-tools
 ```
 
 If you hit the macOS "App is damaged" warning, you can also install with `--no-quarantine`:
 
 ```bash
-brew install --cask --no-quarantine cockpit-tools
+brew install --cask --no-quarantine kenny-tools
 ```
 
-If Homebrew says the app already exists (e.g. `already an App at '/Applications/Cockpit Tools.app'`), remove the old app and install again:
+If Homebrew says the app already exists (e.g. `already an App at '/Applications/Kenny-Tools.app'`), remove the old app and install again:
 
 ```bash
-rm -rf "/Applications/Cockpit Tools.app"
-brew install --cask cockpit-tools
+rm -rf "/Applications/Kenny-Tools.app"
+brew install --cask kenny-tools
 ```
 
 Or force overwrite the existing app:
 
 ```bash
-brew install --cask --force cockpit-tools
+brew install --cask --force kenny-tools
 ```
 
 ### Option C: Arch Linux (AUR)
@@ -329,10 +313,10 @@ Install via an AUR helper such as `yay` or `paru`:
 
 ```bash
 # Source-built package
-yay -S cockpit-tools
+yay -S kenny-tools
 
 # Prebuilt binary package
-yay -S cockpit-tools-bin
+yay -S kenny-tools-bin
 ```
 
 ### 🛠️ Troubleshooting
@@ -343,7 +327,7 @@ Due to macOS security mechanisms, apps not downloaded from the App Store may tri
 1.  **Command Line Fix** (Recommended):
     Open Terminal and run the following command:
     ```bash
-    sudo xattr -rd com.apple.quarantine "/Applications/Cockpit Tools.app"
+    sudo xattr -rd com.apple.quarantine "/Applications/Kenny-Tools.app"
     ```
     > **Note**: If you changed the app name, please adjust the path in the command accordingly.
 
@@ -376,12 +360,6 @@ npm run tauri dev
 ```bash
 npm run tauri build
 ```
-
----
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jlcodes99/cockpit-tools&type=Date)](https://star-history.com/#jlcodes99/cockpit-tools&Date)
 
 ---
 

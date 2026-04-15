@@ -2,11 +2,11 @@ cask "kenny-tools" do
   version "0.21.3"
   sha256 "654a7cd6f7c9ac38da83b94d02e7bc85df826c5fbcaa0d29fa009df1eab7d2f8"
 
-  url "https://github.com/<your-github-username>/kenny-tools/releases/download/v#{version}/Kenny.Tools_#{version}_universal.dmg",
-      verified: "github.com/<your-github-username>/kenny-tools/"
+  url "https://github.com/KennyStride/kenny-tools/releases/download/v#{version}/Kenny-Tools_#{version}_universal.dmg",
+      verified: "github.com/KennyStride/kenny-tools/"
   name "Kenny-Tools"
   desc "Account manager for AI IDEs (Antigravity and Codex)"
-  homepage "https://github.com/<your-github-username>/kenny-tools"
+  homepage "https://github.com/KennyStride/kenny-tools"
 
   auto_updates true
 

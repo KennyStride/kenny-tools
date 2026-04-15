@@ -36,20 +36,12 @@
 - **快捷操作**：一键刷新、一键唤醒
 - **可视化进度**：直观的进度条展示配额消耗情况
 
-> ![Dashboard Overview](docs/images/dashboard_overview.png)
-
 ### 2. Antigravity 账号管理
 
 - **一键切号**：一键切换当前使用的账号，无需手动登录登出
 - **多种导入**：支持 OAuth 授权、Refresh Token、插件同步
 - **唤醒任务**：定时唤醒 AI 模型，提前触发配额重置周期
 - **设备指纹**：生成、管理、绑定设备指纹，降低风控风险
-
-> ![Antigravity Accounts](docs/images/antigravity_list.png)
->
-> *(唤醒任务与设备指纹管理)*
-> ![Wakeup Tasks](docs/images/wakeup_detail.png)
-> ![Device Fingerprints](docs/images/fingerprint_detail.png)
 
 #### 2.1 Antigravity 多开实例
 
@@ -59,15 +51,11 @@
 - **并行项目**：多实例同时处理不同任务/项目
 - **参数隔离**：支持自定义实例目录与启动参数
 
-> ![Antigravity Instances](docs/images/antigravity_instances.png)
-
 ### 3. Codex 账号管理
 
 - **专属支持**：专为 Codex 优化的账号管理体验
 - **配额展示**：清晰展示 Hourly 和 Weekly 配额状态
 - **计划识别**：自动识别账号 Plan 类型 (Basic, Plus, Team 等)
-
-> ![Codex Accounts](docs/images/codex_list.png)
 
 #### 3.1 Codex 多开实例
 
@@ -76,8 +64,6 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
 - **独立账号**：每个实例绑定不同账号并独立运行
 - **并行项目**：多实例同时处理不同任务/项目
 - **参数隔离**：支持自定义实例目录与启动参数
-
-> ![Codex Instances](docs/images/codex_instances.png)
 
 ### 4. GitHub Copilot 账号管理
 
@@ -219,8 +205,6 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
 - **个性化设置**：主题切换、语言设置、自动刷新间隔
 - **平台配置**：统一管理 CodeBuddy CN / Qoder / Trae / Zed 等平台的启动路径与配额预警
 
-> ![Settings](docs/images/settings_page.png)
-
 ---
 
 ## 安全性与隐私（简明版）
@@ -232,7 +216,7 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
   - `~/.antigravity_cockpit`：Antigravity 账号、配置、WebSocket 状态等
   - `~/.codex`：Codex 官方当前登录 `auth.json`
   - `~/.gemini`：Gemini Cli 本地会话文件（如 `oauth_creds.json`、`google_accounts.json`、`settings.json`）
-  - 系统本地应用数据目录下 `com.antigravity.cockpit-tools`：Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini Cli / CodeBuddy / CodeBuddy CN / Qoder / Trae / Zed 多账号索引等
+  - 系统本地应用数据目录下 `com.kennygmail.kennytools`：Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Gemini Cli / CodeBuddy / CodeBuddy CN / Qoder / Trae / Zed 多账号索引等
 - **WebSocket 默认仅本机访问**：监听 `127.0.0.1`，默认端口 `19528`，可在设置中关闭或改端口。
 - **什么时候会联网**：OAuth 登录、Token 刷新、配额查询、版本更新检查等官方接口请求。
 - **实用安全建议**：
@@ -303,26 +287,26 @@ Codex 同样支持多账号多实例并行运行。比如同时打开两个 Code
 
 ```bash
 brew tap KennyStride/kenny-tools https://github.com/KennyStride/kenny-tools
-brew install --cask cockpit-tools
+brew install --cask kenny-tools
 ```
 
 如果遇到 macOS “应用已损坏”或无法打开，也可以使用 `--no-quarantine` 安装：
 
 ```bash
-brew install --cask --no-quarantine cockpit-tools
+brew install --cask --no-quarantine kenny-tools
 ```
 
 如果提示已存在应用（例如：`already an App at '/Applications/Kenny-Tools.app'`），请先删除旧版本再安装：
 
 ```bash
 rm -rf "/Applications/Kenny-Tools.app"
-brew install --cask cockpit-tools
+brew install --cask kenny-tools
 ```
 
 或者直接强制覆盖安装：
 
 ```bash
-brew install --cask --force cockpit-tools
+brew install --cask --force kenny-tools
 ```
 
 ### 选项 C: Arch Linux (AUR)
@@ -331,10 +315,10 @@ brew install --cask --force cockpit-tools
 
 ```bash
 # 源码构建包
-yay -S cockpit-tools
+yay -S kenny-tools
 
 # 预编译二进制包
-yay -S cockpit-tools-bin
+yay -S kenny-tools-bin
 ```
 
 ### 🛠️ 常见问题排查 (Troubleshooting)
@@ -378,22 +362,6 @@ npm run tauri dev
 ```bash
 npm run tauri build
 ```
-
----
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=KennyStride/kenny-tools&type=Date)](https://star-history.com/#KennyStride/kenny-tools&Date)
-
----
-
-## 💬 交流群
-
-QQ交流群 或者加我微信 拉微信群
-
-| QQ 群 | 微信（个人） |
-| :---: | :---: |
-| <img src="docs/images/qq_group_20260404_183718.png" width="200" /> | <img src="docs/images/wechat_info.jpg" width="200" /> |
 
 ---
 

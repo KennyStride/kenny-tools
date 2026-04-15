@@ -7,6 +7,12 @@
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)。
 
 ---
+## [0.21.5] - 2026-04-15
+
+### 修复
+- **无签名密钥时的发布构建现已绕过 `tauri-action` 并直接上传产物**：当仓库未配置签名密钥时，各平台矩阵任务会直接执行 `tauri build`，再通过 `softprops/action-gh-release` 上传 `.exe`、`.msi`、`.dmg`、`.AppImage` 等安装包，避免被 `tauri-action` 的签名前置校验提前中断，保证 Windows `.exe` 能进入 Release。
+
+---
 ## [0.21.4] - 2026-04-15
 
 ### 修复

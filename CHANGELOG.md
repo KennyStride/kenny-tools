@@ -7,6 +7,12 @@ All notable changes to Cockpit Tools will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
+## [0.21.5] - 2026-04-15
+
+### Fixed
+- **Unsigned release builds now bypass `tauri-action` and upload artifacts directly**: when signing keys are absent, each matrix job now runs `tauri build` and uploads platform bundles (`.exe`, `.msi`, `.dmg`, `.AppImage`, etc.) to the draft release through `softprops/action-gh-release`, preventing early action-level signing checks from blocking Windows `.exe` publishing.
+
+---
 ## [0.21.4] - 2026-04-15
 
 ### Fixed

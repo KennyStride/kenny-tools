@@ -180,7 +180,7 @@
       "desc": "تُثبَّت هذه المنطقة في أعلى يمين جميع الصفحات لعرض الحملات أو إعلانات العلامة التجارية.",
       "action": "عرض التفاصيل"
     },
-    "appName": "Cockpit Tools",
+    "appName": "Kenny-Tools",
     "collapse": "طي",
     "confirmDelete": "تأكيد الحذف",
     "confirmDeleteTag": "تأكيد حذف الوسم",
@@ -211,7 +211,7 @@
       "backToCurrent": "رجوع",
       "switchToThisAccount": "تبديل",
       "openDetails": "فتح التفاصيل",
-      "openCockpitTools": "فتح Cockpit Tools"
+      "openCockpitTools": "فتح Kenny-Tools"
     },
     "empty": {
       "title": "لا توجد حسابات",
@@ -520,7 +520,7 @@
   },
   "settings": {
     "title": "إعدادات التطبيق",
-    "subtitle": "قم بتخصيص تجربة Antigravity Cockpit Tools الخاصة بك.",
+    "subtitle": "قم بتخصيص تجربة Antigravity Kenny-Tools الخاصة بك.",
     "tabs": {
       "general": "عام",
       "network": "خدمات الشبكة",
@@ -670,7 +670,7 @@
       "sideNavLayoutClassic": "التخطيط الكلاسيكي",
       "antigravityDualSwitchNoRestart": "تبديل ثنائي بدون إعادة تشغيل",
       "antigravityDualSwitchNoRestartDesc": "عند تبديل الحساب، يتم تنفيذ كتابة بيانات الحساب محليًا والتبديل السلس عبر الإضافة في تدفق واحد، دون إعادة تشغيل Antigravity.",
-      "appAutoLaunch": "تشغيل Cockpit Tools عند تسجيل الدخول",
+      "appAutoLaunch": "تشغيل Kenny-Tools عند تسجيل الدخول",
       "appAutoLaunchDesc": "تشغيل التطبيق تلقائيًا بعد تسجيل الدخول إلى النظام",
       "startupWakeupDisabled": "معطل",
       "startupWakeupImmediate": "تنبيه فوري",
@@ -754,7 +754,7 @@
       "proxyUrlRequired": "لا يمكن أن يكون عنوان الوكيل فارغًا عند تفعيل الوكيل العام."
     },
     "about": {
-      "appName": "Cockpit Tools",
+      "appName": "Kenny-Tools",
       "slogan": "حل احترافي لإدارة الحسابات",
       "author": "المؤلف الرئيسي",
       "wechat": "حساب WeChat الرسمي",
@@ -3422,3 +3422,4 @@
     "copySecret": "نسخ السر"
   }
 }
+

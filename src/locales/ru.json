@@ -180,7 +180,7 @@
       "desc": "Эта область фиксируется в правом верхнем углу на всех страницах и подходит для кампаний или брендовой рекламы.",
       "action": "Подробнее"
     },
-    "appName": "Cockpit Tools",
+    "appName": "Kenny-Tools",
     "collapse": "Свернуть",
     "confirmDelete": "Подтвердить удаление",
     "confirmDeleteTag": "Подтвердить удаление тега",
@@ -474,7 +474,7 @@
   },
   "settings": {
     "title": "Настройки приложения",
-    "subtitle": "Настройте работу Cockpit Tools под себя.",
+    "subtitle": "Настройте работу Kenny-Tools под себя.",
     "tabs": {
       "general": "Общие",
       "network": "Сеть",
@@ -627,7 +627,7 @@
       "sideNavLayoutClassic": "Классический макет",
       "antigravityDualSwitchNoRestart": "Двойное переключение без перезапуска",
       "antigravityDualSwitchNoRestartDesc": "При переключении аккаунта локальная запись данных и плавное переключение через расширение выполняются в одном потоке без перезапуска Antigravity.",
-      "appAutoLaunch": "Запускать Cockpit Tools при входе в систему",
+      "appAutoLaunch": "Запускать Kenny-Tools при входе в систему",
       "appAutoLaunchDesc": "Автоматически запускать приложение после входа в систему",
       "startupWakeupDisabled": "Отключено",
       "startupWakeupImmediate": "Разбудить сразу",
@@ -708,7 +708,7 @@
       "proxyUrlRequired": "URL прокси не может быть пустым, когда глобальный прокси включён."
     },
     "about": {
-      "appName": "Cockpit Tools",
+      "appName": "Kenny-Tools",
       "slogan": "Профессиональное решение для управления аккаунтами",
       "author": "Автор",
       "wechat": "Вичат",
@@ -3320,7 +3320,7 @@
       "backToCurrent": "Назад",
       "switchToThisAccount": "Сменить",
       "openDetails": "Открыть подробности",
-      "openCockpitTools": "Открыть Cockpit Tools"
+      "openCockpitTools": "Открыть Kenny-Tools"
     },
     "empty": {
       "title": "Нет аккаунтов",
@@ -3422,3 +3422,4 @@
     "copySecret": "Скопировать секрет"
   }
 }
+

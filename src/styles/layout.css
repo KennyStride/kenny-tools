@@ -913,3 +913,215 @@ html[data-theme="dark"] .side-nav-classic-handle:hover {
     bottom: calc(100% + 8px);
   }
 }
+
+/* ============================================
+   Kenny-Tools SideNav Refresh
+   ============================================ */
+
+.side-nav {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.94) 0%, rgba(255, 246, 232, 0.84) 100%),
+    var(--bg-card);
+  border-color: rgba(146, 64, 14, 0.2);
+  box-shadow:
+    0 22px 44px rgba(120, 53, 15, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.side-nav-update-btn.is-update {
+  background: linear-gradient(135deg, #d97706, #0f766e);
+}
+
+.side-nav-update-btn.is-restart {
+  background: linear-gradient(135deg, #ea580c, #16a34a);
+}
+
+.side-nav-update-btn.is-progress {
+  background: rgba(217, 119, 6, 0.08);
+  border-color: rgba(217, 119, 6, 0.22);
+}
+
+.side-nav-update-progress-lr {
+  background: linear-gradient(180deg, rgba(217, 119, 6, 0.06) 0%, rgba(217, 119, 6, 0.14) 100%);
+}
+
+.side-nav-update-progress-fill {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.9) 0%, #d97706 42%, #b45309 100%);
+  box-shadow:
+    inset 0 6px 10px -4px rgba(255, 255, 255, 0.35),
+    inset 0 -4px 8px -4px rgba(120, 53, 15, 0.28),
+    2px 0 12px -2px rgba(217, 119, 6, 0.38);
+}
+
+.brand-logo {
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 8px 20px rgba(120, 53, 15, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.brand-logo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.28) 40%, transparent 75%);
+  transform: translateX(-150%);
+  animation: kennyNavBrandSheen 3.8s ease-in-out infinite;
+}
+
+@keyframes kennyNavBrandSheen {
+  0%, 55%, 100% {
+    transform: translateX(-150%);
+  }
+  72% {
+    transform: translateX(130%);
+  }
+}
+
+.nav-item {
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background: rgba(217, 119, 6, 0.14);
+  color: #78350f;
+  border-color: rgba(217, 119, 6, 0.22);
+  transform: translateY(-1px) scale(1.04);
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, #d97706 0%, #0f766e 100%);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 24px rgba(120, 53, 15, 0.3);
+}
+
+.side-nav.side-nav-classic {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 247, 0.95) 0%, rgba(249, 238, 223, 0.92) 100%);
+  border-right-color: rgba(146, 64, 14, 0.15);
+  box-shadow:
+    12px 0 30px -20px rgba(120, 53, 15, 0.28),
+    0 1px 0 rgba(255, 255, 255, 0.75) inset;
+}
+
+.side-nav.side-nav-classic .nav-brand,
+.side-nav.side-nav-classic .nav-bottom-actions {
+  border-color: rgba(146, 64, 14, 0.12);
+}
+
+.side-nav.side-nav-classic .nav-item:hover {
+  background: rgba(217, 119, 6, 0.12);
+  color: #78350f;
+}
+
+.side-nav.side-nav-classic .nav-item.active {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.18), rgba(15, 118, 110, 0.14));
+  color: #92400e;
+  border-color: rgba(217, 119, 6, 0.24);
+}
+
+.nav-sub-item.active {
+  background: rgba(217, 119, 6, 0.14);
+  color: #92400e;
+}
+
+.side-nav-more-popover {
+  background: linear-gradient(180deg, rgba(255, 253, 247, 0.98), rgba(252, 243, 230, 0.98));
+  border-color: rgba(146, 64, 14, 0.2);
+  box-shadow:
+    0 18px 36px rgba(120, 53, 15, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+}
+
+.side-nav-more-item.active {
+  border-color: rgba(217, 119, 6, 0.4);
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.16), rgba(15, 118, 110, 0.12));
+}
+
+.side-nav-more-sub-item.active {
+  color: #92400e;
+  background: rgba(217, 119, 6, 0.12);
+}
+
+.side-nav-more-manage {
+  border-color: rgba(146, 64, 14, 0.22);
+  background: rgba(217, 119, 6, 0.08);
+  color: #78350f;
+}
+
+.side-nav-more-manage:hover {
+  background: rgba(217, 119, 6, 0.16);
+}
+
+[data-theme="dark"] .side-nav,
+html[data-theme="dark"] .side-nav {
+  background:
+    linear-gradient(180deg, rgba(35, 29, 21, 0.9) 0%, rgba(24, 23, 19, 0.92) 100%);
+  border-color: rgba(245, 158, 11, 0.22);
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .nav-item:hover,
+html[data-theme="dark"] .nav-item:hover {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #fef3c7;
+}
+
+[data-theme="dark"] .nav-item.active,
+html[data-theme="dark"] .nav-item.active {
+  background: linear-gradient(135deg, #f59e0b 0%, #0f766e 100%);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+[data-theme="dark"] .side-nav.side-nav-classic,
+html[data-theme="dark"] .side-nav.side-nav-classic {
+  background: linear-gradient(180deg, rgba(28, 24, 20, 0.96) 0%, rgba(18, 20, 21, 0.96) 100%);
+  border-right-color: rgba(245, 158, 11, 0.2);
+  box-shadow:
+    12px 0 30px -18px rgba(0, 0, 0, 0.62),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .side-nav.side-nav-classic .nav-item.active,
+html[data-theme="dark"] .side-nav.side-nav-classic .nav-item.active {
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.26);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(20, 184, 166, 0.18));
+}
+
+[data-theme="dark"] .nav-sub-item.active,
+html[data-theme="dark"] .nav-sub-item.active {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.18);
+}
+
+[data-theme="dark"] .side-nav-more-popover,
+html[data-theme="dark"] .side-nav-more-popover {
+  background: linear-gradient(180deg, rgba(31, 29, 25, 0.98), rgba(20, 22, 24, 0.98));
+  border-color: rgba(245, 158, 11, 0.26);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.52);
+}
+
+[data-theme="dark"] .side-nav-more-item.active,
+html[data-theme="dark"] .side-nav-more-item.active {
+  border-color: rgba(245, 158, 11, 0.38);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(20, 184, 166, 0.16));
+}
+
+[data-theme="dark"] .side-nav-more-sub-item.active,
+html[data-theme="dark"] .side-nav-more-sub-item.active {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+[data-theme="dark"] .side-nav-more-manage,
+html[data-theme="dark"] .side-nav-more-manage {
+  border-color: rgba(245, 158, 11, 0.25);
+  background: rgba(245, 158, 11, 0.12);
+  color: #fef3c7;
+}
